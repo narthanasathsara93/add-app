@@ -1,0 +1,14 @@
+<h1>User List</h1>
+
+<mat-list>
+  <mat-list-item *ngFor="let user of users">
+    <img mat-list-avatar [src]="user.imgUrl" alt="{{ user.name }}'s photo" />
+    <div mat-line>
+      <h2>{{ user.name }}</h2>
+      <p>{{ user.title }}</p>
+    </div>
+    <div mat-line>
+      <p>{{ user.description }}</p>
+    </div>
+  </mat-list-item>
+</mat-list>
