@@ -4,15 +4,22 @@
 
 <div class="mat-list-container">
   <mat-list>
-    <mat-list-item *ngFor="let user of users">
-      <img mat-list-avatar [src]="user.imgUrl" alt="{{ user.name }}'s photo" />
-      <div mat-line>
-        <h2>{{ user.name }}</h2>
-        <p>{{ user.title }}</p>
+    <mat-card class="mat-card" *ngFor="let user of users" [routerLink]="['/user', user.id]">
+      <div class="user-info">
+        <div class="user-info-head-container">
+          <img
+            class="user-photo"
+            [src]="user.imgUrl"
+            alt="{{ user.name }}'s photo"
+          />
+          <h2>{{ user.title }}</h2>
+        </div>
+        <div class="user-info-head-container">
+          <div mat-line>
+            <p>{{ user.description }}</p>
+          </div>
+        </div>
       </div>
-      <div mat-line>
-        <p>{{ user.description }}</p>
-      </div>
-    </mat-list-item>
+    </mat-card>
   </mat-list>
 </div>
