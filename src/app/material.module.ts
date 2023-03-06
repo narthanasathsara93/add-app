@@ -10,6 +10,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -26,6 +28,8 @@ import { FormsModule } from '@angular/forms';
     MatDividerModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    MatMenuModule,
+    MatSidenavModule,
     FormsModule
   ],
   exports: [
@@ -39,6 +43,8 @@ import { FormsModule } from '@angular/forms';
     MatDividerModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    MatMenuModule,
+    MatSidenavModule,
     FormsModule
   ]
 })

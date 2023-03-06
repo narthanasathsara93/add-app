@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { UserListComponent } from './users/user-list/user-list.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    NavbarComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
